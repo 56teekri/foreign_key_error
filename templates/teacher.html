@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}teacher form{% endblock %}
+
+{% block content %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        username: {{uform.username}}<br>
+        fname: {{uform.first_name}}<br>
+        lname: {{uform.last_name}}<br>
+        password: {{uform.password}}<br>
+        students: {{tform.students}}<br>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock content %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Author Form {% endblock title %} 
+{% block content %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit">Submit</button>
+    </form>
+{% endblock content %}
